@@ -15,8 +15,7 @@ app.get('/users/:userId/color/:color', (req, res) => {
     res.send(`your user id is ${id} ${req.params.color} `)
 })
 
-app.route('/route')
-.get((req, res) => {
+app.route('/route').get((req, res) => {
     res.send('from a get request')
 })
 .post((req, res) => {
